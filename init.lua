@@ -107,6 +107,9 @@ vim.opt.relativenumber = true
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = 'a'
 
+-- Tabs to show 4 spaces visully
+vim.opt.tabstop = 4
+
 -- Don't show the mode, since it's already in the status line
 vim.opt.showmode = false
 
@@ -764,7 +767,7 @@ require('lazy').setup({
         -- python = { "isort", "black" },
         --
         -- You can use 'stop_after_first' to run the first available formatter from the list
-        -- javascript = { "prettierd", "prettier", stop_after_first = true },
+        javascript = { 'biome', stop_after_first = true },
       },
     },
   },
